@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragments.FragmentHomePageEmptyCase_6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ImageView_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_home_page"/>
+
+        <ImageView
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/status_bar_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_inicio"
+            android:text="Inicio"
+            android:fontFamily="@font/jua_regular"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:lineHeight="24dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_picture_circle"
+            android:layout_marginTop="48dp"
+            android:layout_marginLeft="305dp"/>
+
+        <TextView
+            android:id="@+id/textView_saludo"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Hola, "
+            android:textColor="#7AFFFFFF"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView_nombre"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:text="Juanito"
+            android:textColor="#86FFFFFF"
+            android:fontFamily="@font/jua_regular"
+            android:textSize="16dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="70dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_balance"
+            android:text="Balance Total"
+            android:fontFamily="@font/jua_regular"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_currency"
+            android:text="$"
+            android:fontFamily="@font/jua_regular"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_ammount"
+            android:text="124.57"
+            android:fontFamily="@font/jua_regular"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="65dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ImageView_notificaciones"
+            android:src="@drawable/notifications_icon"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="330dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:id="@+id/button_send"
+                android:layout_width="165dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape_green"
+                android:drawableStart="@drawable/arrow_up"
+                android:fontFamily="@font/jua_regular"
+                android:paddingLeft="30dp"
+                android:text="  Enviar Dinero"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/button_recieve"
+                android:layout_width="165dp"
+                android:layout_height="49dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shape"
+                android:drawableStart="@drawable/arrow_down"
+                android:textColor="@color/white"
+                android:paddingLeft="30dp"
+                android:text="  Recibir Dinero"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="233dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/jua_regular"
+            android:paddingLeft="15dp"
+            android:height="24dp"
+            android:textColor="@color/black"
+            android:text="Ultimas transacciones"
+            android:textSize="16dp"
+            android:textFontWeight="400"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ImageView_emptyCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/empty_illustration"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:paddingBottom="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:text="No hay transacciones registradas!"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:lineHeight="17dp"
+        android:textFontWeight="400"
+        android:textColor="#80000000"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

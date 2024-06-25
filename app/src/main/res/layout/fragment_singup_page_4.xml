@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login2"
+    tools:context=".presentation.fragments.FragmentSingupPage_4">
+
+    <ImageView
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/status_bar"/>
+
+    <TextView
+        android:id="@+id/text_title1"
+        android:layout_width="315dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-260dp"
+        android:fontFamily="@font/jua_regular"
+        android:lineHeight="52dp"
+        android:text="Registrarse y empezar a transferir"
+        android:textFontWeight="400"
+        android:textSize="32sp"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-140dp">
+
+        <TextView
+            android:id="@+id/textView_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Nombre"
+            android:textColor="@color/black"
+            android:lineHeight="21dp"
+            android:textSize="14dp"
+            android:textFontWeight="400"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/editTextTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_nombre"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:hint="Ingresar nombre"
+            android:alpha="0.4"
+            android:fontFamily="@font/jua_regular"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-60dp">
+
+        <TextView
+            android:id="@+id/textView_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Apellido"
+            android:lineHeight="21dp"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14dp"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/editTextTextApellido"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_apellido"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:hint="Ingresar apellido"
+            android:alpha="0.4"
+            android:fontFamily="@font/jua_regular"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:lineHeight="21dp"
+            android:textSize="14dp"
+            android:textFontWeight="400"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_email"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:hint="Ingresar email"
+            android:alpha="0.4"
+            android:fontFamily="@font/jua_regular"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/textView_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Contraseña"
+            android:textColor="@color/black"
+            android:lineHeight="21dp"
+            android:textSize="14dp"
+            android:textFontWeight="400"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_contrasena"
+            android:background="@drawable/rounded_button"
+            android:drawableRight="@drawable/view_icon"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Ingresar tu contraseña"
+            android:fontFamily="@font/jua_regular"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="14dp"
+            android:alpha="0.4"
+            tools:layout_editor_absoluteY="501dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp">
+
+        <TextView
+            android:id="@+id/textView_reingresarContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Reingresar Contraseña"
+            android:textColor="@color/black"
+            android:lineHeight="21dp"
+            android:textSize="14dp"
+            android:textFontWeight="400"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/editTextTextReingresarContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_reingresarContrasena"
+            android:background="@drawable/rounded_button"
+            android:drawableRight="@drawable/view_icon"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Ingresar tu contraseña"
+            android:fontFamily="@font/jua_regular"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="14dp"
+            android:alpha="0.4"
+            tools:layout_editor_absoluteY="501dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnCrearCuenta"
+        android:layout_width="315dp"
+        android:layout_height="49dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/jua_regular"
+        android:text="Crear Cuenta"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/jua_regular"
+        android:text="Ya tienes una cuenta??"
+        android:textColor="@color/my_light_primary"
+        android:textStyle="bold"/>
+
+
+    !<!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/button_back4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/left_arrow"
+            android:backgroundTint="#2196F3" />
+
+        <Button
+            android:id="@+id/button_home4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/home"
+            android:backgroundTint="#2196F3" />
+
+    </RelativeLayout>-->
+
+</FrameLayout>

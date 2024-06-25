@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black2">#1A1A1A</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="my_light_primary">#63b0fc</color>
+    <color name="grey">#F3F4F5</color>
+    <color name="blue">#1A87DD</color>
+    <color name="green">#72DB31</color>
+    <color name="grey_opacity">#1B2A3B</color>
+    <color name="black_opacity">#05000000</color>
+    <color name="light_blue">#1A87DD</color>
+
+
+
+
+
+
+
+</resources>

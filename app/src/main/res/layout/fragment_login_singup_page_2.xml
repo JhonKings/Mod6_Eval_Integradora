@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragments.FragmentLoginSingupPage_2">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/status_bar_white"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="106dp"
+        android:layout_height="137dp"
+        android:layout_below="@+id/status_bar"
+        android:layout_gravity="center"
+        android:background="@drawable/logo"
+        android:layout_marginTop="-130dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua_regular"
+        android:text="El lugar mas seguro para tu dinero"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"/>
+
+    <Button
+        android:id="@+id/btnCrearCuenta"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/jua_regular"
+        android:text="Crear cuenta nueva"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtYaExisteCuenta"
+        android:layout_width="130dp"
+        android:layout_height="21dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/jua_regular"
+        android:text="Ya tiene cuenta?"
+        android:textColor="@color/my_light_primary"
+        android:textStyle="bold" />
+
+
+</FrameLayout>

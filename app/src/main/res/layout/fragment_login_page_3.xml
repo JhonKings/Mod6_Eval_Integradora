@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login2"
+    tools:context=".presentation.fragments.FragmentLoginPage_3" >
+
+    <ImageView
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/status_bar"
+        android:layout_gravity="top"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/text_title1"
+        android:layout_width="315dp"
+        android:layout_height="104dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-180dp"
+        android:fontFamily="@font/jua_regular"
+        android:lineHeight="52dp"
+        android:text="Logea y empeza a tranferir!"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="315dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-30dp">
+
+        <TextView
+            android:id="@+id/textView_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Email"
+            android:lineHeight="21dp"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14dp"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/textView_email"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:fontFamily="@font/jua_regular"
+            android:hint="Ingresar tu email"
+            android:textSize="14dp"
+            android:textFontWeight="400"
+            android:lineHeight="21dp"
+            android:alpha="0.4"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="315dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/textView_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Contraseña"
+            android:lineHeight="21dp"
+            android:textColor="@color/black"
+            android:textFontWeight="400"
+            android:textSize="14dp"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:fontFamily="@font/jua_regular"
+            android:layout_below="@+id/textView_contrasena"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_button"
+            android:drawableRight="@drawable/view_icon"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Ingresar tu contraseña"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="14dp"
+            android:alpha="0.4"/>
+
+        <TextView
+            android:id="@+id/textView_olvidoContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextPassword"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/jua_regular"
+            android:gravity="right"
+            android:text="Olvidaste tu contraseña?"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="383dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="315dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/shape"
+        android:fontFamily="@font/jua_regular"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtCrearCuentaNueva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:fontFamily="@font/jua_regular"
+        android:text="Crear una nueva cuenta"
+        android:textColor="@color/my_light_primary"
+        android:textStyle="bold" />
+
+
+
+</FrameLayout>

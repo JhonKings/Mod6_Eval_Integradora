@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".presentation.fragments.FragmentTrasactionRecycle">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="356dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp">
+
+        <ImageView
+            android:id="@+id/imageViewPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_picture_yara"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="460dp" />
+
+        <ImageView
+            android:id="@+id/imageViewArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageViewPhoto"
+            android:layout_alignBottom="@+id/imageViewPhoto"
+            android:layout_marginEnd="-7dp"
+            android:layout_marginBottom="-8dp"
+            android:background="@drawable/oval"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="485dp" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/imageViewPhoto"
+            android:layout_alignBottom="@+id/imageViewPhoto"
+            android:layout_marginEnd="-7dp"
+            android:layout_marginBottom="-8dp"
+            android:background="@drawable/rectangle_small"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="485dp" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imageViewArrow"
+            android:layout_alignTop="@+id/imageViewArrow"
+            android:layout_alignEnd="@+id/imageViewArrow"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+
+            android:background="@drawable/arrow_up"
+            android:backgroundTint="#F8BB18"/>
+
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="239dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Yara Khalil"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="17dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="-$15.00"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="196dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/jua_regular"
+            android:text="Oct 14, 10:24 AM"
+            android:textColor="#5B000000" />
+
+    </RelativeLayout>
+
+</FrameLayout>

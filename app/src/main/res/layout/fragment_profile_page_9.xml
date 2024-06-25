@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragments.FragmentProfilePage_9">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/shape_grey"
+        android:drawableLeft="@drawable/profile_icon"
+        android:drawableRight="@drawable/arrow_right"
+        android:fontFamily="@font/jua_regular"
+        android:lineHeight="21dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="    Mi informacion"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        android:layout_gravity="top"
+        android:background="@drawable/rectangle_grey">
+
+        <ImageView
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/status_bar" />
+
+        <ImageView
+            android:id="@+id/imgArrowBack"
+            android:layout_width="14dp"
+            android:layout_height="11dp"
+            android:layout_below="@+id/status_bar"
+            android:background="@drawable/arrow_left"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textView_1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/jua_regular"
+            android:gravity="center"
+            android:lineHeight="30px"
+            android:text="Mi perfil"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/pencil_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignRight="@+id/textView_1"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edit_icon" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="60dp"
+            android:background="@drawable/profile_picture" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="74dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="75dp"
+            android:background="@drawable/profile_picture_2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24sp"
+            android:layout_marginTop="210dp"
+            android:fontFamily="@font/jua_regular"
+            android:gravity="center"
+            android:lineHeight="24dp"
+            android:text="Amanda Alkemy"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_grey"
+        android:fontFamily="@font/jua_regular"
+        android:text="    Mis tarjetas"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textAlignment="textStart"
+        android:lineHeight="21dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/wallet_icon"
+        android:drawableRight="@drawable/arrow_right"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/shape_grey"
+        android:fontFamily="@font/jua_regular"
+        android:text="    Opciones"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textAlignment="textStart"
+        android:lineHeight="21dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/gear_icon"
+        android:drawableRight="@drawable/arrow_right"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/shape_grey"
+        android:fontFamily="@font/jua_regular"
+        android:text="    Centro de ayuda"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textAlignment="textStart"
+        android:lineHeight="21dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/talk_icon"
+        android:drawableRight="@drawable/arrow_right"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"/>
+
+
+</FrameLayout>
