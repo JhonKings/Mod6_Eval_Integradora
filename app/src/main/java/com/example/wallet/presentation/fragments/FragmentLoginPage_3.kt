@@ -42,13 +42,13 @@ class FragmentLoginPage_3 : Fragment() {
         btnLogin.setOnClickListener{
             var flag: Boolean = false
 
-            flag = validater.usersValidate(binding.editTextEmail.text.toString(), binding.editTextPassword.text.toString())
+            /*flag = validater.usersValidate(binding.editTextEmail.text.toString(), binding.editTextPassword.text.toString())
 
             if(flag){
                 navController.navigate(R.id.fragmentHomePage_5)
             }else{
                 Toast.makeText(context, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
-            }
+            }*/
 
         }
 

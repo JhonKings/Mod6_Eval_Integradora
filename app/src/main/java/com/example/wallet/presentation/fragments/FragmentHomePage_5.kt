@@ -46,7 +46,7 @@ class FragmentHomePage_5 : Fragment() {
         binding.recycleTransaction.layoutManager = LinearLayoutManager(context)
         binding.recycleTransaction.adapter = TransactionAdapter()
         transaction.transactionListLiveData.observe(viewLifecycleOwner) {
-            transaction -> (binding.recycleTransaction.adapter as TransactionAdapter).transactions = transaction
+            //transaction -> (binding.recycleTransaction.adapter as TransactionAdapter).transactions = transaction
         }
 
         val btnVolver = binding.txtInicio

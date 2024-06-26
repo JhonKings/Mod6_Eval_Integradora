@@ -1,4 +1,4 @@
-package com.example.wallet.data
+package com.example.wallet.data.local
 
 data class Transactions(
     val userPhoto: Int,

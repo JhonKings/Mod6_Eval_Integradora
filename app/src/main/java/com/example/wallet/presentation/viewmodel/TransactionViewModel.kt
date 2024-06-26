@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.wallet.R
-import com.example.wallet.data.Transactions
+import com.example.wallet.data.local.Transactions
 
 class TransactionViewModel: ViewModel() {
 

@@ -7,9 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.wallet.R
-import com.example.wallet.data.Transactions
+import com.example.wallet.data.local.Transactions
 
 class TransactionAdapter: RecyclerView.Adapter<TransactionAdapter.ViewHolder>() {
 
@@ -28,11 +27,11 @@ class TransactionAdapter: RecyclerView.Adapter<TransactionAdapter.ViewHolder>() 
     override fun onBindViewHolder(holder: TransactionAdapter.ViewHolder, position: Int) {
         val transaction = transactions[position]
 
-        holder.userPhoto.setImageResource(transaction.userPhoto)
+       /* holder.userPhoto.setImageResource(transaction.userPhoto)
         holder.simbolArrow.setImageResource(transaction.simbolArrow)
         holder.userName.text = transaction.userName
         holder.date.text = transaction.date
-        holder.amount.text = transaction.amount
+        holder.amount.text = transaction.amount*/
     }
 
     override fun getItemCount(): Int {

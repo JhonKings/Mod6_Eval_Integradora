@@ -1,4 +1,4 @@
-package com.example.wallet
+package com.example.wallet.presentation.fragments
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

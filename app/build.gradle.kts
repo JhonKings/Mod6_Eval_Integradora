@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -45,8 +46,28 @@ android {
 
 dependencies {
 
+//retrofit
+    implementation (libs.retrofit)
+
+//gson
+    implementation (libs.gson)
+
+//converter
+    implementation (libs.converter.gson)
+
+//Picasso
+    implementation(libs.picasso)
+
+// ROOM
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    ksp(libs.room.compiler)
+
+//live data
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.lifecycle.livedata.ktx)
+
+
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
     implementation(libs.appcompat)
