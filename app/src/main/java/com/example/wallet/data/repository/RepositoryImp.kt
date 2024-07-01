@@ -2,7 +2,10 @@ package com.example.wallet.data.repository
 
 
 import com.example.wallet.data.local.dao.UserDao
+import com.example.wallet.data.model.User
 import com.example.wallet.data.network.api.WalletServiceAPI
+import com.example.wallet.data.response.LoginRequest
+import com.example.wallet.data.response.LoginResponse
 import com.example.wallet.data.response.UserCreatedResponse
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -18,7 +21,7 @@ class RepositoryImp (private val userApi: WalletServiceAPI,
         }
     }
 
-    /*override suspend fun loginUser(user: LoginRequest): Response<LoginResponse> {
+    override suspend fun loginUser(user: LoginRequest): Response<LoginResponse> {
         return withContext(Dispatchers.IO) {
             userApi.userLogin(user)
         }
@@ -28,5 +31,5 @@ class RepositoryImp (private val userApi: WalletServiceAPI,
         return withContext(Dispatchers.IO) {
             userDao.insertUser(user)
         }
-    }*/
+    }
 }

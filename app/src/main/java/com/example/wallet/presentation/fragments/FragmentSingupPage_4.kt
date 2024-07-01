@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.wallet.R
 import com.example.wallet.data.local.database.AppDatabase
 import com.example.wallet.data.network.api.WalletServiceAPI
@@ -54,6 +55,9 @@ class FragmentSingupPage_4 : Fragment() {
         val viewModelFactory = ViewModelFactory(useCase)
         viewModel = ViewModelProvider(this, viewModelFactory)[SignUpViewModel::class.java]
 
+        binding.txtLogin.setOnClickListener {
+            findNavController().navigate(R.id.fragmentLoginPage_3)
+        }
 
         val btnLogin = binding.btnCrearCuenta
         btnLogin.setOnClickListener{
@@ -68,7 +72,6 @@ class FragmentSingupPage_4 : Fragment() {
             val userResponse = UserCreatedResponse(0, name, apellido, email, password, null, 1, null, null)
             Log.i("userResponse", userResponse.toString())
             viewModel.createUser(userResponse)
-
 
 
             viewModel.livedata.observe(viewLifecycleOwner) {result ->

@@ -14,9 +14,7 @@ import androidx.navigation.Navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.wallet.R
 import com.example.wallet.databinding.FragmentHomePage5Binding
-import com.example.wallet.databinding.FragmentLoginPage3Binding
 import com.example.wallet.presentation.adapter.TransactionAdapter
-import com.example.wallet.presentation.viewmodel.LoginViewModel
 import com.example.wallet.presentation.viewmodel.TransactionViewModel
 
 class FragmentHomePage_5 : Fragment() {
@@ -46,7 +44,7 @@ class FragmentHomePage_5 : Fragment() {
         binding.recycleTransaction.layoutManager = LinearLayoutManager(context)
         binding.recycleTransaction.adapter = TransactionAdapter()
         transaction.transactionListLiveData.observe(viewLifecycleOwner) {
-            //transaction -> (binding.recycleTransaction.adapter as TransactionAdapter).transactions = transaction
+            transaction -> (binding.recycleTransaction.adapter as TransactionAdapter).transactions = transaction
         }
 
         val btnVolver = binding.txtInicio
@@ -81,14 +79,14 @@ class FragmentHomePage_5 : Fragment() {
         val btnVerOcultar = binding.ImageViewNotification
         btnVerOcultar.setOnClickListener{ v: View ->
 
-            if (binding.LayoutWithTransations.visibility == View.VISIBLE) {
-                Log.i("hola", "hola")
+            if (binding.LayoutWithTransactions.visibility == View.VISIBLE) {
+                //Log.i("hola", "hola")
                 binding.layoutWhitoutTransactions.visibility = View.VISIBLE
-                binding.LayoutWithTransations.visibility = View.GONE
+                binding.LayoutWithTransactions.visibility = View.GONE
             } else {
-                Log.i("bye", "bye")
+               // Log.i("bye", "bye")
                 binding.layoutWhitoutTransactions.visibility = View.GONE
-                binding.LayoutWithTransations.visibility = View.VISIBLE
+                binding.LayoutWithTransactions.visibility = View.VISIBLE
             }
         }
     }

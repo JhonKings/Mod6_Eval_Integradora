@@ -14,9 +14,9 @@ class ViewModelFactory (private val useCase: UseCase)
                 SignUpViewModel(useCase) as T
             }
 
-            /*modelClass.isAssignableFrom(LoginPageViewModel::class.java) -> {
-                LoginPageViewModel(useCase) as T
-            }*/
+            modelClass.isAssignableFrom(LoginViewModel::class.java) -> {
+                LoginViewModel(useCase) as T
+            }
             else -> {
                 throw IllegalArgumentException("Unknown ViewModel class")
             }

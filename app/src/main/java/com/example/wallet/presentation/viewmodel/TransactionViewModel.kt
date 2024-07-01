@@ -10,7 +10,7 @@ class TransactionViewModel: ViewModel() {
 
     private var transactionList = MutableLiveData<MutableList<Transactions>>()
     val transactionListLiveData: LiveData<MutableList<Transactions>>
-    get() = transactionList
+        get() = transactionList
 
     init {
         fetchTransactions()

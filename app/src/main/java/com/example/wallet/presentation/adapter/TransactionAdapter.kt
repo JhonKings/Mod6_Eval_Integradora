@@ -13,11 +13,11 @@ import com.example.wallet.data.local.Transactions
 class TransactionAdapter: RecyclerView.Adapter<TransactionAdapter.ViewHolder>() {
 
     var transactions = mutableListOf<Transactions>()
-    @SuppressLint("NotifyDataSetChanged")
-    set(value){
-        field = value
-        this.notifyDataSetChanged()
-    }
+        @SuppressLint("NotifyDataSetChanged")
+        set(value){
+            field = value
+            this.notifyDataSetChanged()
+        }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TransactionAdapter.ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.fragment_trasaction_recycle, parent, false)
@@ -27,11 +27,11 @@ class TransactionAdapter: RecyclerView.Adapter<TransactionAdapter.ViewHolder>() 
     override fun onBindViewHolder(holder: TransactionAdapter.ViewHolder, position: Int) {
         val transaction = transactions[position]
 
-       /* holder.userPhoto.setImageResource(transaction.userPhoto)
+        holder.userPhoto.setImageResource(transaction.userPhoto)
         holder.simbolArrow.setImageResource(transaction.simbolArrow)
         holder.userName.text = transaction.userName
         holder.date.text = transaction.date
-        holder.amount.text = transaction.amount*/
+        holder.amount.text = transaction.amount
     }
 
     override fun getItemCount(): Int {
